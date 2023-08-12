@@ -42,6 +42,7 @@ let weather = {
     weather.fetchDataLocation(position.coords.latitude, position.coords.longitude);
   },
   error: function(){
+      weather.fetchData("Barrie", "ON", "CA");
     console.log("Can not display weather at your current location as, your location not available!!!");
   },
   loadInit: function(){
